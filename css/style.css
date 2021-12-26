@@ -47,6 +47,41 @@ h1 {
     margin-bottom: 15px;
 }
 /* Конец заголовка */
+.page-header {
+    background-image: url(../img/fon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 0 332px 0;
+    position: relative;
+}
+
+.screen-img {
+    display: block;
+    background-image: url(../img/skrin1.png);
+    background-repeat: no-repeat;
+    width: 725px;
+    height: 740px;
+    position: absolute;
+    top: 200px;
+    right: 0px;
+
+}
+.logo {
+    display: block;
+    background-image: url(../img/logotip.png);
+    width: 181px;
+    height: 49px;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 55px;
+    margin-bottom: 305px;
+
+}
+
 .nav {
     display: flex;
     font-size: 12px;
@@ -59,7 +94,7 @@ h1 {
     list-style-type: none;
     
 }
-.nav > li {
+.nav>li {
     padding: 0 15px;
 }
 .nav-item {
@@ -141,6 +176,46 @@ h1 {
     padding: 24px 56px;
 }
 
+.page-company {
+    background-image: url(../img/siniy-fon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.list-company {
+    list-style-type: none;
+    margin: 0;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-company-item {
+    display:flex;
+    flex-basis: 20%;
+    background-repeat: no-repeat;
+}
+
+.company-one {
+    background-image: url(../img/logo.png);
+    height: 59px;
+}
+
+.company-two {
+    background-image: url(../img/magneto.png);
+    height: 69px;
+}
+
+.company-three {
+    background-image: url(../img/boohoo.png);
+    height: 47px;
+}
+
+.company-four {
+    background-image: url(../img/fractal.png);
+    height: 69px;
+}
 .grid h2 {
     font-size: 40px;
     font-weight: 700;
@@ -170,21 +245,89 @@ h1 {
     color: #7581a1;
 }
 
+.page-subscribe {
+    background: rgba(16,53,159,1);
+background: -moz-linear-gradient(left, rgba(16,53,159,1) 0%, rgba(0,96,240,1) 100%);
+background: webkit-gradient(left top, right top, color-stop(0%, rgba(16,53,159,1)), color-stop(100%, rgba(0,96,240,1)));
+background: -webkit-linear-gradient(left, rgba(16,53,159,1) 0%, rgba(0,96,240,1) 100%);
+background: -o-linear-gradient(left, rgba(16,53,159,1) 0%, rgba(0,96,240,1) 100%);
+background: -ms-linear-gradient(left, rgba(16,53,159,1) 0%, rgba(0,96,240,1) 100%);
+background: linear-gradient(to right, rgba(16,53,159,1) 0%, rgba(0,96,240,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#10359f', endColorstr='#0060f0', GradientType=1 );
+    padding: 90px 40px 50px 4px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.robot-img {
+    display: block;
+    background-image: url(../img/robot.png);
+    background-repeat: no-repeat;
+    width: 695px;
+    height: 540px;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+}
+
+.email {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+input {
+    background: #8196aa;
+    border: 1px solid #1085e4;
+    border-radius: 40px;
+    color: white;
+    padding: 30px;
+    width: 500px;
+}
+  
+input:focus {
+    outline: none;
+}
+  
+input::placeholder {
+    color: white;
+}
+
+input:hover {
+    color: #1085e4;
+    background-color: #fff;
+}
+
+button {
+  position: absolute;
+  background: #16bdae;
+  border: 0;
+  border-radius: 40px;
+  color: white;
+  padding: 15px;
+  cursor:pointer;
+  right: 5px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+  
 .page-subscribe span {
     font-size: 14px;
     color: #00bffe;
-    display: block;
+    width: 100px;
 }
 
 .page-subscribe h2 {
     font-size: 50px;
     font-weight: 600;
-    color: #ffffff
+    color: #ffffff;
+    width: 400px;
 }
 .page-subscribe p {
     font-size: 18px;
     font-weight: 400;
     color:#a6b3e2;
+    width: 400px;
 }
 .page-subscribe button {
     font-size: 14px;
@@ -438,10 +581,10 @@ h1 {
     background-color: #94b4cc;
     border: 1px solid #94b4cc;
 }
-.page-plan .btn-primary {
+.page-plan .btn-primaty {
     padding: 20px 60px;
 }
-.page-plan .btn-primary:hover {
+.page-plan .btn-primaty:hover {
     background-color: transparent;
 }
 
