@@ -275,7 +275,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#10359f', end
   position: relative;
   overflow: hidden;
 }
-input {
+.input-email {
     background: #8196aa;
     border: 1px solid #1085e4;
     border-radius: 40px;
@@ -284,30 +284,35 @@ input {
     width: 500px;
 }
   
-input:focus {
+.input-email:focus {
     outline: none;
 }
   
-input::placeholder {
+.input-email::placeholder {
     color: white;
 }
 
-input:hover {
+.input-email:hover {
     color: #1085e4;
     background-color: #fff;
 }
 
-button {
+.button-email {
   position: absolute;
-  background: #16bdae;
-  border: 0;
   border-radius: 40px;
   color: white;
-  padding: 15px;
   cursor:pointer;
   right: 5px;
   top: 50%;
   transform: translate(0, -50%);
+  background-color: #1085e4;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 25px 45px;
+  border-radius: 40px;
+  letter-spacing: 3.5px;
+  border: 1px solid #1085e4;
 }
 
   
