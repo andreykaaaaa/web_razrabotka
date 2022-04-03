@@ -72,6 +72,8 @@ h1 {
 }
 
 
+
+
 /* Конец заголовка */
 .page-header {
     background-image: url(../img/fon.png);
@@ -136,6 +138,7 @@ h1 {
     border-radius: 30px;
     letter-spacing: 2.6px;
     border: 1px solid #1085e4;
+    transform: translate(0, 0.25em);
 }
 
 .btn-primary:hover {
@@ -420,52 +423,83 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#584cff', end
 
 
 .page-software {
-    height: 1000px;
     background-image: url(../img/bg5.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.znak {
-    margin: 90px 200px 0 900px;
+.page-software .title-h2 {
+    max-width: 560px;
+} 
+
+.page-software-screen2 {
+    background-image: url(../img/screen2.png);
+    background-repeat: no-repeat;
+    width: 1180px;
+    height: 800px;
 }
-.grab {
+
+.page-software-icon {
+    display: block;
+    background-image: url(../img/icon.png);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 87px;
+}
+
+.page-software-list {
+    overflow-y: scroll;
+    height: 200px;
+    width: 500px;
+}
+
+.page-software-list::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 6px;
+    background-color: #aaa;
+}
+
+.page-software-list::-webkit-scrollbar-thumb {
+    background: #000;
+}
+
+.page-software-list dt {
+    font-weight: 700;
+}
+
+.page-software-list dd {
+    margin-left: 0;
+    margin-bottom: 50px;
+}
+
+.page-software-flex {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0 100px 0 900px;
-    padding: 0;
+    justify-content: flex-end;
+    padding: 100px 0;
+
 }
-.five-slaid {
-    position: absolute;
-    margin: 100px 0;
+
+.qwerty {
+    flex-basis: 50%;
 }
-.page-software h2 {
-    font-size: 50px;
-    font-weight: 600;
-    max-width: 530px;
-    color: #192b59;
-    line-height: 1.1;
-    letter-spacing: -2.5px;
-    margin-bottom: 65px;
-}
+
 .page-software p {
     font-size: 16px;
     font-weight: 400;
     color: #7581a1;
 }
-.page-software dt {
+.page-software-list dt {
     font-size: 16px;
     font-weight: 700;
     color:#5a6789;
-    padding: 30px;
+    padding: 0;
 }
-.page-software dd {
+.page-software-list dd {
     font-size: 14px;
     font-weight: 400;
     color: #9aa3ba;
 }
+
 .page-stat span {
     font-size: 16px;
     font-weight: 800;
@@ -531,6 +565,34 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#584cff', end
     justify-content: space-between;
 }
 
+.storebtn-appstore, .storebtn-gplay {
+  display: inline-block;
+  vertical-align: text-bottom;
+  overflow: hidden;
+  width: 130px;
+  height: 45px;
+  border: none;
+  border-radius: 0.25em;
+  padding: 0;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  color: transparent;
+  color: #FFF;
+  text-indent: -150%;
+  text-decoration: none;
+}
+
+
+.storebtn-appstore {
+  background-image: url(../img/btn-appstore-en.png);
+}
+
+.storebtn-gplay {
+    background-image: url(../img/btn-gplay-en.png);
+  }
+
 .page-app h2 {
     font-size: 50px;
     font-weight: 600;
@@ -544,6 +606,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#584cff', end
     color: #bfc4d3;
 }
 
+.page-app h4 {
+    font-size: 12px;
+    font-weight: 400px;
+}
+
 .finans {
     background-image: url(../img/bg8.png);
     background-repeat: no-repeat;
@@ -552,8 +619,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#584cff', end
 }
 
 .page_finans {
-    margin-left: 200px;
-    padding: 100px 100px;
+    margin-left: 160px;
+    padding: 120px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -561,27 +628,28 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#584cff', end
 }
 
 .txt_brandon {
-    max-width: 550px;
-    margin: 0 100px;
-    padding: 0;
-    line-height: 1.1;
+    background-image: url(../img/icon.png);
+    background-repeat: no-repeat;
+    flex-basis: 50%;
+    margin-left: 70px;
+    padding-top: 55px;
+    padding-left: 25px;
 }
 .page_finans h2 {
-    padding: 0;
     font-size: 50px;
     font-weight: 600;
     color:black;
+    line-height: 1.1;
 }
 .page_finans p {
     font-size: 16px;
     font-weight: 400;
     color: #b5bfd3;
+    line-height: 1.4;
 }
 .page_finans button {
     font-size: 12px;
     font-weight: 700;
-    color: #9fcef4;
-    background-color: #1085e4;
 }
 
 .page-control {
@@ -592,7 +660,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#584cff', end
 }
 
 .control {
-    margin: 0;
     padding: 100px;
     display: flex;
     flex-direction: row;
@@ -601,27 +668,37 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#584cff', end
 }
 
 .txt_easy {
-    max-width: 550px;
-    margin: 0 150px;
-    padding: 0;
-    line-height: 1.1;
+    background-image: url(../img/icon.png);
+    background-repeat: no-repeat;
+    flex-basis: 50%;
+    margin-right: 50px;
+    padding: 25px;
+    padding-top: 50px;
+
 }
+
+.page-control button {
+    font-size: 12px;
+    font-weight: 700;
+    width: 250px;
+    margin-top: 20px;
+}
+
 .page-control h2 {
     font-size: 50px;
     font-weight: 600;
     color: #192b59;
+    line-height: 1.2;
+    max-width: 450px;
 }
 .page-control p {
     font-size: 16px;
     font-weight: 400;
     color: #b5bfd3;
+    line-height: 1.5;
+    
 }
-.page-control button {
-    font-size: 12px;
-    font-weight: 700;
-    color: #9fcef4;
-    background-color: #1085e4;
-}
+
 .page-screen span {
     font-size: 18px;
     font-weight: 800;
@@ -673,58 +750,59 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#584cff', end
 .page-clients {
     background-color: #fff;
     background-image: url(../img/bg_11.png);
-    background-size: cover;
+    background-size: 90%;
     background-repeat: no-repeat;
-    margin: 100px 0 80px 0;
+    margin: 100px 0;
 }
 
-.page-clients h2 {
-    color: #fff;
-    margin-left: 300px;
-}
-
-.page-clients span {
-    color:darkturquoise;
-}
-
-.page-clients p {
-    max-width: 300px;
+.clients {
+    display: block;
+    margin: 0 300px;
+    padding: 10px;
 }
 
 .box-clients {
-    margin: 0 300px 0 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .box-one {
-    width: 300px;
+    width: 250px;
     height: 250px;
     background-color: #fff;
-    padding: 20px;
+    padding: 30px;
     border-radius: 5px;
-    display: block;
-    margin: 0;
+    margin-bottom: -100px;
+    
 }
 
-.box-two {
-    width: 300px;
-    height: 250px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
+.Rolin {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.girl {
+    margin: 10px;
+}
+
+.ceo {
     display: block;
 }
 
-.box-three {
-    width: 300px;
-    height: 250px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    display: block
+.page-clients h2 {
+    color: #fff;
 }
+
+.page-clients span {
+    color:darkturquoise;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+
+
 
 .box-price {
     display: flex;
