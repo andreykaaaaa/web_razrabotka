@@ -910,42 +910,168 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#584cff', end
 }
 
 .page-team {
-    background-image: url(../img/bg12.png);
+    text-align: center;
+    background-image: url(../img/team-bg.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 0 0 100px 0;
+    padding: 80px 0 20px 0;
 }
 
-.box_team {
+.page-team .title-h2-40 span {
+    color: #85c8ff;
+}
+
+.page-team .title-h2-40 {
+    color: #fff;
+}
+
+.box-team {
     display: flex;
     justify-content: space-between;
     margin-top: 140px;
 }
-.box_team_item {
-    background-color: #f5faff;
-    flex-basis: 12%;
-    padding: 0 0 80px 0;
+
+.box-team-item {
+    background-color: #fff;
+    flex-basis: 32%;
+    box-shadow: 0 5px 6px #f4f4f4;
     position: relative;
-}
-.box_team_item img {
-    margin: -80px 30px 0 30px;
-}
-.box_team_item p {
-    font-size: 26px;
-    font-weight: 600;
-    color: #192b59;
-}
-.box_team_item strong {
-    font-size: 14px;
-    font-weight: 800;
-    color: #1a88e1;
+    padding: 190px 0 40px 0;
 }
 
-.box_team_item p, strong {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.box-team-item .position {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #1a88e1;
+    font-weight: 900;
+    letter-spacing: 3.1px;
+    margin-bottom: 9px;
+}
+
+.box-team-item .name {
+    font-size: 26px;
+    color: #192b59;
+    font-weight: 600;
+    margin-top: 10px;
+    letter-spacing: -0.5px;
+}
+
+.box-team .avatar {
+    position: absolute;
+    width: 290px;
+    height: 290px;
+    top: -95px;
+    left: 0;
+    right: 0;
     margin: 0 auto;
+}
+
+.btn-team {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #f3f3f3;
+    margin: 0 auto;
+    border: none;
+    padding: 0;
+    transition: 0.3s;
+}
+
+.box-team-item .button-more span {
+    background-image: url(../img/team-btn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20px;
+    width: 20px;
+    display: block;
+    background-position: 15px 15.5px;
+    margin: 0 auto;
+    align-self: center;
+}
+
+.box-team-item .btn-team:hover {
+    background-color: #1a88e1;
+}
+
+.box-team-item .button-more:hover span {
+    background-position: 15px -4px;
+}
+
+.box-team-item .button-more:focus {
+    outline: none;
+}
+
+.social-team {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    justify-content: space-around;
+}
+
+.box-team-item .btn-fb span {
+    background-image: url(../img/team-btn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20px;
+    width: 20px;
+    display: block;
+    background-position: -44px 16.5px;
+    margin: 0 auto;
+    align-self: center;
+}
+
+.box-team-item .btn-tw span {
+    background-image: url(../img/team-btn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20px;
+    width: 20px;
+    display: block;
+    background-position: -103px 17.5px;
+    margin: 0 auto;
+    align-self: center;
+}
+
+.box-team-item .btn-be span {
+    background-image: url(../img/team-btn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20px;
+    width: 20px;
+    display: block;
+    background-position: -164px 17.5px;
+    margin: 0 auto;
+    align-self: center;
+}
+
+.box-team-item .btn-wb span {
+    background-image: url(../img/team-btn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20px;
+    width: 20px;
+    display: block;
+    background-position: -223px 18.5px;
+    margin: 0 auto;
+    align-self: center;
+}
+
+.box-team-item .btn-fb:hover span {
+    background-position: -44px -4.5px;
+}
+
+.box-team-item .btn-tw:hover span {
+    background-position: -103px -4.5px;
+}
+
+.box-team-item .btn-be:hover span {
+    background-position: -164px -4.5px;
+}
+
+.box-team-item .btn-wb:hover span {
+    background-position: -223px -4.5px;
 }
 
 .page-form {
