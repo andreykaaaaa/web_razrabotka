@@ -1089,7 +1089,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#584cff', end
 
 .bg-12 img {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: 40px;
 }
@@ -1152,10 +1152,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#584cff', end
 }
 
 .bg-12 span {
-    display: block;
-    text-align: center;
+    align-self: center;
     padding: 0;
     margin: 0 auto;
+}
+
+.telegramm {
+    background-image: url(../img/premium-icon-telegram-2584672.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 24px;
+    height: 22px;
+}
+
+.knopka {
+    display: flex;
 }
 
 .footer {
@@ -1166,7 +1177,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#584cff', end
     justify-content: space-between;
     align-items: center;
     margin: 0 250px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .social {
@@ -1175,12 +1186,46 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#584cff', end
     font-weight: 700;
     color: #fff;
     padding: 0;
-
+    list-style-type: none;
 }
 .social>li {
-    padding: 0 15px;
+    padding: 0 10px;
 }
+
+.youtube {
+    background-image: url(../img/YOUTUBE_icon-icons.com_65537.png);
+    background-repeat: no-repeat;
+    background-size: 35%;
+    width: 40px;
+    height: 24px;
+}
+
+.twitter {
+    background-image: url(../img/1485972269-twitersocialnetworkbrandlogo_78989.png);
+    background-repeat: no-repeat;
+    background-size: 35%;
+    width: 40px;
+    height: 28px;
+}
+
+.instagramm {
+    background-image: url(../img/INSTAGRAM_icon-icons.com_65535.png);
+    background-repeat: no-repeat;
+    background-size: 35%;
+    width: 40px;
+    height: 28px;
+}
+
+.facebook {
+    background-image: url(../img/FB_icon-icons.com_65534.png);
+    background-repeat: no-repeat;
+    background-size: 35%;
+    width: 40px;
+    height: 24px;
+}
+
 
 .last a {
     color:#00bffe ;
+    text-transform: uppercase;
 }
